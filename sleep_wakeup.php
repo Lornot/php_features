@@ -20,6 +20,11 @@
         public function __wakeup(){
             echo 'Unserialization';
         }
+
+        public function __toString(){
+            return 'City Name: '.$this -> name.'<br/> City Population: '.$this -> population;
+
+        }
     }
 
     $London = new City('London', 10000000);
@@ -29,3 +34,5 @@
     echo "<pre>";
     var_dump(unserialize($serialized));
     echo "</pre>";
+
+    echo $London;
