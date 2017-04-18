@@ -13,5 +13,5 @@
     }
 
     $Science = new Science();
-
-    $Science();
+//
+//    $Science();

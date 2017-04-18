@@ -5,10 +5,12 @@
     class City {
         public $name;
         public $population;
+        public $is_capital = false;
 
-        public function __construct($name, $population){
+        public function __construct($name, $population, $is_capital){
             $this -> name = $name;
             $this -> population = $population;
+            $this -> is_capital = $is_capital;
         }
 
         /** Returns the properties that should be serialized and invoke before serialization of object */
@@ -27,12 +29,12 @@
         }
     }
 
-    $London = new City('London', 10000000);
-
-    $serialized = serialize($London);
-
-    echo "<pre>";
-    var_dump(unserialize($serialized));
-    echo "</pre>";
-
-    echo $London;
+//    $London = new City('London', 10000000, true);
+//
+//    $serialized = serialize($London);
+//
+//    echo "<pre>";
+//    var_dump(unserialize($serialized));
+//    echo "</pre>";
+//
+//    echo $London;

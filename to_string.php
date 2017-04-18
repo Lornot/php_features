@@ -19,6 +19,5 @@
 
     }
 
-    $panzer = new Unit('panzer', 10, 5);
-
-    print($panzer);
+//    $panzer = new Unit('panzer', 10, 5);
+//    print($panzer);
